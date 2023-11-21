@@ -1,7 +1,16 @@
 import { useState } from "react";
 
 function Display() {
-  const [items, setItems] = useState(["hello", "iloveu", "tellmeyourname"]);
+  const [items, setItems] = useState([
+    {
+      title: "hello",
+      description: "hfuihwioweh",
+      tech: "hoiewfhwoifhwieo",
+      repoLink: "iloveu",
+      demoLink: "tellmeyourname",
+      image: "iowihweowh",
+    },
+  ]);
 
   return (
     <div>
