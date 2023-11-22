@@ -15,7 +15,10 @@ function Display() {
   return (
     <div>
       {items.map((item, i) => (
-        <p key={i}>{item}</p>
+        <div key={i}>
+          <p>{item.title}</p>
+          <p>{item.description}</p>
+        </div>
       ))}
     </div>
   );
