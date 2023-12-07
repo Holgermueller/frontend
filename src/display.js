@@ -1,4 +1,5 @@
 import { useState } from "react";
+import demo from "./assets/images/demo.png";
 
 function Display() {
   const [items, setItems] = useState([
@@ -13,14 +14,19 @@ function Display() {
   ]);
 
   return (
-    <div>
+    <section id="projectDisplay">
       {items.map((item, i) => (
-        <div key={i}>
-          <p>{item.title}</p>
-          <p>{item.description}</p>
+        <div className="display-card" key={i}>
+          <div className="text-container">
+            <p>{item.title}</p>
+            <p>{item.description}</p>
+          </div>
+          <div className="image-container">
+            <img src={demo} alt="mypic" width={100}></img>
+          </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 }
 
