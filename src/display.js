@@ -19,7 +19,11 @@ function Display() {
         <div className="display-card" key={i}>
           <div className="text-container">
             <p>{item.title}</p>
+            <p>{item.tech}</p>
             <p>{item.description}</p>
+            <div className="links-container">
+              <div>,ink</div>
+            </div>
           </div>
           <div className="image-container">
             <img src={demo} alt="mypic" width={100}></img>
